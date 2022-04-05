@@ -1,2 +1,33 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.task-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 90vw;
+  height: 90px;
+  margin: auto auto
+}
+
+.task-title {
+  padding-left: 10px;
+  margin: 0px;
+  font-size: 18px;
+  height: 90px;
+  width: 80%;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.circle {
+  background-color: green;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
