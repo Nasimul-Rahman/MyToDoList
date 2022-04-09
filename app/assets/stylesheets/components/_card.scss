@@ -1,0 +1,41 @@
+.task-containers {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+.task-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 90vw;
+  height: 90px;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 6px;
+
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+}
+
+.task-title {
+  padding-left: 10px;
+  margin: 0px;
+  font-size: 18px;
+  height: 90px;
+  width: 80%;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.circle {
+  background-color: green;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
