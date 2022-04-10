@@ -14,7 +14,7 @@ class TasksController < ApplicationController
     @task = Task.new(task_params)
 
     if @task.save
-      redirect_to root_path, notice: 'Restaurant was successfully created.'
+      redirect_to root_path
     else
       render :new
     end
@@ -26,6 +26,20 @@ class TasksController < ApplicationController
 
   def show
     @task = Task.find(params[:id])
+  end
+
+  def update
+    if @task.update(task_params)
+      redirect_to @restaurant
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @task = Task.find(params[:id])
+    @task.destroy
+    redirect_to root_path
   end
 
   private

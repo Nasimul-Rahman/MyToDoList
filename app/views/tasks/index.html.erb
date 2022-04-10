@@ -4,7 +4,9 @@
       <%= link_to  task_path(task), class: "task-title" do %>
         <h2 class="task-title"><%= task.title %></h2>
       <% end %>
-      <div class="circle"></div>
+      <%= link_to task_path(task), method: :delete  do %>
+        <div class="circle"></div>
+      <% end %>
     </div>
   <% end %>
 
