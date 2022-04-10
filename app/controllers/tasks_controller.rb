@@ -14,7 +14,7 @@ class TasksController < ApplicationController
     @task = Task.new(task_params)
 
     if @task.save
-      redirect_to root, notice: 'Restaurant was successfully created.'
+      redirect_to root_path, notice: 'Restaurant was successfully created.'
     else
       render :new
     end
