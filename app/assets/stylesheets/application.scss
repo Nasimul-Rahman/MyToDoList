@@ -12,8 +12,7 @@
 @import "pages/index";
 @import "pages/new";
 
-.page_container {
-  height: 100vh;
+body {
   width: 100vw;
   background-color: $Twilight-lavendar;
   font-family: 'Poppins', sans-serif;
